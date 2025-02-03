@@ -69,7 +69,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, classification_report
 
-def detailed_model_analysis(model, test_loader, data_loader):
+def detailed_model_analysis(model, test_loader):
     model.eval()
     all_preds = []
     all_probs = []
@@ -89,6 +89,7 @@ def detailed_model_analysis(model, test_loader, data_loader):
             all_probs.extend(probs.cpu().numpy())
             all_targets.extend(batch_y.cpu().numpy())
     
+    # Rest of the function remains the same...
     # Convert to numpy arrays
     all_preds = np.array(all_preds)
     all_probs = np.array(all_probs)

@@ -1,1 +1,8 @@
 /models
+.env
+*.csv
+/__pycache__
+*.png
+*.__pycache__
+*.pth
+*.pyc

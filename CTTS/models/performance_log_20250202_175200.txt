@@ -1,0 +1,3 @@
+Timestamp: 20250202_175200
+Standard Accuracy: 48.00%
+Thresholded Accuracy: 48.00%
